@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tontol Finance</title>
-    <link rel="icon" href="/assets/favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -29,27 +28,22 @@
     <!-- end Anouncement -->
 
     <!-- navbar -->
-    <nav class="bg-white shadow dark:bg-gray-800">
-      <div class="container flex items-center justify-between p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-        <!-- Gambar di sebelah kiri -->
-        <a href="">
-          <img src="assets/tontol-logo.png" alt="Logo" class="h-full w-full lg:h-10" />
+    <nav class="shadow bg-gray-800">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex items-center mb-4 md:mb-0" href="#">
+          <img src="assets/tontol-logo.png" alt="tontol-logo" class="h-10 w-full" />
         </a>
-
-        <!-- Menu di sebelah kanan -->
-        <div class="flex items-center">
-          <a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Developers</a>
-
-          <a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Doc</a>
-
-          <a href="#" class="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6">Token</a>
-
-          <button
-            class="px-4 py-3 font-medium text-sm tracking-wide text-center text-white transition-colors duration-300 transform bg-ton rounded-lg hover:bg-blue-100 hover:text-blue-950 focus:ring focus:ring-blue-950 focus:ring-opacity-80 ml-6"
-          >
-            LAUNCH APP <span class="font-mono text-slate-400">(Soon)</span>
-          </button>
-        </div>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 text-white hover:text-slate-400" href="#">Developers</a>
+          <a class="mr-5 text-white hover:text-slate-400" href="#">Doc</a>
+          <a class="mr-5 text-white hover:text-slate-400" href="#">Token Info</a>
+        </nav>
+        <button class="inline-flex items-center bg-ton text-white px-3 py-1 rounded-md hover:bg-blue-100 hover:text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-4 md:mt-0">
+          Launch app<span class="mx-2 font-mono text-slate-400"> (soon)</span>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
       </div>
     </nav>
 
@@ -66,7 +60,7 @@
 
         <div class="inline-flex w-full mt-6 sm:w-auto">
           <a
-            href="https://twitter.com/intent/tweet?text=I%20just%20join%20my%20Tontol%20Drop%20credential%20at%20%40tontolfinance.xyz%20and%20proof%20ton%20address%20%3A%0A%0A%22your%20ton%20address%22%0A%0A%40tontolfinance%20is%20the%201st%20%23Lending%20Assets%20combining%20GenAI%20with%20high%20return%20in%20Web3"
+            href="https://twitter.com/intent/tweet?text=I%20just%20join%20my%20Tontol%20Drop%20credential%20at%20%40tontolfinance%20and%20proof%20ton%20address%20%3A%0A%0A%22your%20ton%20address%22%0A%0A%40tontolfinance%20is%20the%201st%20%23Lending%20Assets%20combining%20GenAI%20with%20high%20return%20in%20Web3"
             target="_blank"
             class="inline-flex items-center justify-center w-full px-6 py-2 text-white duration-300 bg-ton rounded-lg hover:bg-blue-100 hover:text-blue-950 focus:ring focus:ring-blue-300 focus:ring-opacity-80"
           >
@@ -77,14 +71,6 @@
     </section>
     <!-- end CTA -->
 
-    <!-- Footer -->
-    <hr class="h-px mt-72 bg-gray-200 border-none dark:bg-gray-700" />
-
-    <div>
-      <p class="text-center my-4 text-gray-500 dark:text-gray-400">© Tontol 2024 - All rights reserved</p>
-    </div>
-    <!-- endFooter -->
-
     <!-- Cookie Banner -->
     <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 z-50 flex justify-between items-center">
       <div class="text-sm">
@@ -93,6 +79,7 @@
       </div>
       <button id="acceptCookies" class="bg-ton text-white px-3 py-1 rounded-md hover:bg-blue-100 hover:text-blue-950 focus:outline-none focus:ring-2 focus:ring-blue-500">Accept</button>
     </div>
+    <!-- End Cookie Banner -->
 
     <script>
       // Check if the user has already accepted cookies
@@ -108,4 +95,12 @@
       });
     </script>
   </body>
+
+  <!-- Footer -->
+  <hr class="h-px mt-72 bg-gray-200 border-none dark:bg-gray-700" />
+
+  <div>
+    <p class="text-center my-4 text-gray-500 dark:text-gray-400">© Tontol 2024 - All rights reserved</p>
+  </div>
+  <!-- endFooter -->
 </html>
